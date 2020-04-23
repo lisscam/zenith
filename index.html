@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,16 +10,55 @@
     <title>Zenith Landing Page</title>
 
     <!-- Font special for pages-->
-    <link href="./resources/fonts/futura-book.ttf" rel="stylesheet">
-    <link href="./resources/fonts/futura-heavy.ttf" rel="stylesheet">
+    <!-- <link href="./resources/fonts/futura-book.ttf" rel="stylesheet">
+    <link href="./resources/fonts/futura-heavy.ttf" rel="stylesheet"> -->
     <!-- CSS-->
-    <link href="css/base.css" rel="stylesheet" media="all">
-    <link href="css/main.css" rel="stylesheet" media="all">
+    <link href="main.css" rel="stylesheet" media="all">
 </head>
 
 <body>
-   <h1>Test</h1>
-    
+    <div class="nav container">
+        <!-- <div class="nav__wrapper-main"> -->
+          <div class="nav__logo-wrapper">
+              <img class="nav__logo" src="resources/images/hero/zenith-logo.png" alt="logo"/>
+          </div>
+
+          <div onClick="openNav()" class="nav__hamburger-wrapper">
+              <span class="nav__hamburger-icon"></span>
+              <span class="nav__hamburger-icon"></span>
+          </div>
+        
+          <nav id="link-wrapper" class="nav__list-wrapper nav__closed">
+                <ul class="nav__list">
+                    <li class="nav__list-item">
+                        <a href="#">Features</a>
+                    </li>
+
+                    <li class="nav__list-item"> 
+                        <a href="#">integrations</a>
+                    </li>
+
+                    <li class="nav__list-item__highlight">  
+                        <a href="#">Get Zenith</a>
+                    </li>
+                </ul>
+          </nav>
+        <!-- </div> -->
+    </div>
+
+    <header class="hero">
+    </header>
+
+    <section class="features">
+
+    </section>
+    <section class="integrations">
+
+    </section>
+    <form class="contact">
+
+    </form>
+    <script src="script.js"></script>
 </body>
 
 </html>

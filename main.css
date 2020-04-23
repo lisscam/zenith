@@ -1,0 +1,232 @@
+/* ==========================================================================
+   #FONT
+   ========================================================================== */
+   @font-face{
+     font-family: "futura";
+     src: url('resources/fonts/futura-book.ttf') format('ttf');
+   }
+ 
+   @font-face{
+     font-family: "futura-bold";
+     src: url('resources/fonts/futura-heavy.ttf') format('ttf');
+     font-style: normal;
+     font-weight: 700;
+   }
+
+  body {
+    font-family: "futura", "Arial", "Helvetica Neue", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #393939;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+  }
+  
+  /* ==========================================================================
+     #BOX-SIZING
+     ========================================================================== */
+  /**
+   *Sensible default box-sizing:
+   */
+  html, body {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  
+  *, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+  }
+  
+  /* ==========================================================================
+     #RESET
+     ========================================================================== */
+  /**
+   * A very simple reset that sits on top of Normalize.css.
+   */
+  body,
+  h1, h2, h3, h4, h5, h6,
+  blockquote, p, pre,
+  dl, dd, ol, ul,
+  figure,
+  hr,
+  fieldset, legend {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /**
+   * Remove trailing margins from nested lists.
+   */
+  li > ol,
+  li > ul {
+    margin-bottom: 0;
+  }
+
+  ul, p {
+    list-style-type: none;
+    margin: 0;
+  }
+
+  a {
+    font-family: 'futura-bold';
+    font-size: 10px;
+    text-decoration: none;
+    transition: opacity .15s ease-in-out;
+    color: inherit;
+    text-transform: uppercase;
+  }
+  a:hover {
+      opacity: .70;
+  }
+
+  
+  /**
+   * Remove default table spacing.
+   */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  /**
+   * 1. Reset Chrome and Firefox behaviour which sets a `min-width: min-content;`
+   *    on fieldsets.
+   */
+  fieldset {
+    min-width: 0;
+    /* [1] */
+    border: 0;
+  }
+  
+  button {
+    outline: none;
+    background: none;
+    border: none;
+  }
+
+  input {
+    outline: none;
+    margin: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+
+  select {
+  outline: none;
+  margin: 0;
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  }
+
+/* Layout */
+.container {
+  margin: 0 auto;
+  padding: 0 30px;
+  max-width: 1200px;
+}
+.section {
+  margin-bottom: 90px;
+}
+.nav {
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav__logo-wrapper, .nav__hamburger-wrapper{
+  width: 50%;
+}
+.nav__hamburger-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 5px;
+}
+.nav__logo {
+  max-width: 150px;
+}
+.nav__hamburger-icon {
+  width: 40px;
+  height: 4px;
+  border-radius: 30px;
+  background: #8A4CF6;
+  display: block;
+}
+  .nav__hamburger-icon:nth-child(1) {
+    width: 50px;
+    margin-bottom: 10px;
+  }
+
+.nav__list-wrapper {
+  margin-left: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+.nav__list{
+  color: #393939;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0;
+}
+.nav__list-item{
+  padding: 0px 10px 0px 10px;
+  margin-bottom: 15px;
+}
+
+.nav__closed {
+  display: none;
+}
+
+/* Blocks */
+ 
+
+/* Modifiers  */
+.nav__list-item__highlight {
+  color: #ffffff;
+  background: linear-gradient(196.2deg, #AB00FF -34.29%, #007BFF 136.11%);
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.24);
+  border-radius: 100px;
+  padding: 13px 20px 15px 20px;
+}
+
+
+/* media */
+@media (min-width: 321px){
+
+}
+@media (min-width: 768px){
+  .nav__hamburger-wrapper {
+    display: none;
+  }
+  .nav__list-wrapper {
+    display: block;
+    margin: 0;
+    width: 50%;
+  }
+  .nav__list {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .nav__list-item {
+    margin-bottom: 0;
+    padding: 10px;
+  }
+}
+@media (max-width: 1024px){
+
+}
