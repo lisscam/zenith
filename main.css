@@ -212,12 +212,11 @@
   box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.25);
 }
 .hero__header {
-  
   font-family: 'futura-bold';
   position: absolute;
   width: 260px;
   left: 10px;
-  top: 80px;
+  top: 70px;
   padding: 20px;
 }
 .parent {
@@ -434,12 +433,10 @@
     padding: 10px;
   }
   .hero__center-card-image {
-    position: absolute;
     width: calc(345px + 20%);
     height: calc(116px + 10%);
     left: 170px;
     top: 200px;
-    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.25);
   }
 
   .features {
@@ -489,6 +486,17 @@
     width: 12%;
   }
 }
-@media (max-width: 1024px){
 
+@media (min-width: 1024px){
+  .hero__header {
+    width: 400px;
+    left: 10px;
+    top: 80px;
+    padding: 20px;
+  }
+  .hero__center-card-image {
+    height: 256px;
+    width: 764px;
+    left: 280px;
+  }
 }
